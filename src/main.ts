@@ -2,9 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 import { createPinia } from 'pinia'
-
+// Above the createApp() line
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 import { IonicVue } from '@ionic/vue';
 
+defineCustomElements(window);
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
 

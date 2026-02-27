@@ -5,6 +5,7 @@ import { useUserStore } from '@/stores/user';
 
 const Login = () => import('@/views/Login.vue');
 const Registro = () => import('@/views/Registro.vue');
+const Camara = () => import('@/views/Camara.vue');
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,6 +24,14 @@ const routes: Array<RouteRecordRaw> = [
     path: '/registro',
     name: 'Registro',
     component: Registro,
+    meta: {
+      requiresAuth: false
+    }
+  },
+  {
+    path: '/camara',
+    name: 'Camara',
+    component: Camara,
     meta: {
       requiresAuth: false
     }
