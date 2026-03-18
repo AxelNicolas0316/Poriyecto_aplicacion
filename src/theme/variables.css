@@ -1,2 +1,399 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+/* ========================================
+   TEMA PROFESIONAL - RIKSIRI APP
+   Diseñado para competir por el mejor diseño
+   ======================================== */
+
+:root {
+  /* ========================================
+     PALETA DE COLORES PRINCIPAL
+     ======================================== */
+  --ion-color-primary: #4f46e5;
+  --ion-color-primary-rgb: 79, 70, 229;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #463fca;
+  --ion-color-primary-tint: #6159e8;
+
+  --ion-color-secondary: #06b6d4;
+  --ion-color-secondary-rgb: 6, 182, 212;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #05a0ba;
+  --ion-color-secondary-tint: #1fbde0;
+
+  --ion-color-tertiary: #8b5cf6;
+  --ion-color-tertiary-rgb: 139, 92, 246;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #7a4fe0;
+  --ion-color-tertiary-tint: #976bf7;
+
+  --ion-color-success: #10b981;
+  --ion-color-success-rgb: 16, 185, 129;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ea371;
+  --ion-color-success-tint: #28c08e;
+
+  --ion-color-warning: #f59e0b;
+  --ion-color-warning-rgb: 245, 158, 11;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #d98b0a;
+  --ion-color-warning-tint: #f6a823;
+
+  --ion-color-danger: #ef4444;
+  --ion-color-danger-rgb: 239, 68, 68;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33d3d;
+  --ion-color-danger-tint: #f15757;
+
+  --ion-color-dark: #1e1e2e;
+  --ion-color-dark-rgb: 30, 30, 46;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1a1a28;
+  --ion-color-dark-tint: #353545;
+
+  --ion-color-medium: #6b7280;
+  --ion-color-medium-rgb: 107, 114, 128;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #5e6570;
+  --ion-color-medium-tint: #7a818d;
+
+  --ion-color-light: #f9fafb;
+  --ion-color-light-rgb: 249, 250, 251;
+  --ion-color-light-contrast: #1e1e2e;
+  --ion-color-light-contrast-rgb: 30, 30, 46;
+  --ion-color-light-shade: #e0e2e5;
+  --ion-color-light-tint: #fafbfc;
+
+  /* ========================================
+     COLORES PERSONALIZADOS - GRADIENTES
+     ======================================== */
+  --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+  --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #4f46e5 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --gradient-warm: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --gradient-cool: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+
+  /* ========================================
+     SOMBRAS ELEVADAS
+     ======================================== */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.3);
+  --shadow-glow-secondary: 0 0 20px rgba(6, 182, 212, 0.3);
+
+  /* ========================================
+     BORDES REDONDEADOS
+     ======================================== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     TRANSICIONES SUAVES
+     ======================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ========================================
+     ESPACIADO
+     ======================================== */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* ========================================
+     FUENTES
+     ======================================== */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+}
+
+/* ========================================
+   MODO OSCURO
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ion-background-color: #0f0f1a;
+    --ion-background-color-rgb: 15, 15, 26;
+
+    --ion-text-color: #f9fafb;
+    --ion-text-color-rgb: 249, 250, 251;
+
+    --ion-toolbar-background: #1e1e2e;
+    --ion-toolbar-color: #f9fafb;
+
+    --ion-item-background: #1e1e2e;
+    --ion-item-color: #f9fafb;
+
+    --ion-card-background: #27273a;
+    
+    --gradient-surface: linear-gradient(135deg, #1e1e2e 0%, #27273a 100%);
+  }
+}
+
+/* ========================================
+   MODO CLARO
+   ======================================== */
+@media (prefers-color-scheme: light) {
+  :root {
+    --ion-background-color: #f9fafb;
+    --ion-background-color-rgb: 249, 250, 251;
+
+    --ion-text-color: #1e1e2e;
+    --ion-text-color-rgb: 30, 30, 46;
+
+    --ion-toolbar-background: #ffffff;
+    --ion-toolbar-color: #1e1e2e;
+
+    --ion-item-background: #ffffff;
+    --ion-item-color: #1e1e2e;
+
+    --ion-card-background: #ffffff;
+    
+    --gradient-surface: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
+  }
+}
+
+/* ========================================
+   ANIMACIONES PERSONALIZADAS
+   ======================================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(79, 70, 229, 0.5), 0 0 40px rgba(139, 92, 246, 0.3);
+  }
+}
+
+/* ========================================
+   CLASES DE UTILIDAD
+   ======================================== */
+.fade-in {
+  animation: fadeIn var(--transition-base) ease-out;
+}
+
+.fade-in-up {
+  animation: fadeInUp var(--transition-slow) ease-out;
+}
+
+.fade-in-down {
+  animation: fadeInDown var(--transition-base) ease-out;
+}
+
+.scale-in {
+  animation: scaleIn var(--transition-bounce) ease-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft var(--transition-slow) ease-out;
+}
+
+.slide-in-right {
+  animation: slideInRight var(--transition-slow) ease-out;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* ========================================
+   ESTILOS GLOBALES IONIC
+   ======================================== */
+ion-button {
+  --border-radius: var(--radius-lg);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all var(--transition-base);
+}
+
+ion-button.button-large {
+  --border-radius: var(--radius-xl);
+  font-size: var(--font-size-lg);
+  padding: 20px 32px;
+}
+
+ion-button.button-round {
+  --border-radius: var(--radius-full);
+}
+
+ion-card {
+  --border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  margin: var(--space-md);
+}
+
+ion-input, ion-textarea {
+  --border-radius: var(--radius-lg);
+  --padding-top: 14px;
+  --padding-bottom: 14px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+ion-item {
+  --border-radius: var(--radius-md);
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  margin-bottom: var(--space-sm);
+  transition: all var(--transition-fast);
+}
+
+ion-item:hover {
+  --background: rgba(79, 70, 229, 0.05);
+}
+
+ion-toolbar {
+  --border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+ion-header ion-toolbar:first-of-type {
+  padding-top: max(var(--status-bar-padding), 10px);
+}
+
+/* ========================================
+   SCROLLBAR PERSONALIZADO
+   ======================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ion-color-medium);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ion-color-primary);
+}
+
+/* ========================================
+   SELECCIÓN DE TEXTO
+   ======================================== */
+::selection {
+  background: var(--ion-color-primary);
+  color: var(--ion-color-primary-contrast);
+}
